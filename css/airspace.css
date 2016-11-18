@@ -116,7 +116,7 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #009fb7, #322e40);
+  background: linear-gradient(to left, #009fb7, #1d1d1d);
   opacity: 0.4;
 }
 #slider .block {
@@ -236,7 +236,7 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
+  background: #003f49;
   opacity: 0.8;
 }
 #call-to-action h2 {
