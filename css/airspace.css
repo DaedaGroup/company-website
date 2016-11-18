@@ -116,7 +116,7 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #009fb7, #1d1d1d);
+  background: linear-gradient(to left, #0094a6, #1d1d1d);
   opacity: 0.4;
 }
 #slider .block {
@@ -168,7 +168,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #intro .service-item i {
   font-size: 60px;
-  color: #009fb7;
+  color: #0094a6;
 }
 #intro .service-item h4 {
   padding-top: 20px;
@@ -194,7 +194,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #service .service-item i {
   font-size: 60px;
-  color: #009fb7;
+  color: #0094a6;
 }
 #service .service-item h4 {
   padding-top: 20px;
@@ -292,7 +292,7 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-bottom: 20px;
 }
 #feature .btn-view-works {
-  background: #009fb7;
+  background: #0094a6;
   color: #fff;
   padding: 10px 20px;
 }
