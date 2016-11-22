@@ -60,6 +60,7 @@ a:active {
   font-family: 'Volkhov', serif;
   font-style: italic;
   color: #666;
+  text-align: left;
 }
 /*--
 	Header Start
@@ -100,7 +101,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider Start
 --*/
 #slider {
-  background: url("../img/slider-bg.jpg") no-repeat;
+  background: url("/img/slider-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
@@ -123,16 +124,16 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #E3E3E4;
 }
 #slider .block h1 {
+  margin-top: 1.6em;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 45px;
-  line-height: 60px;
+  line-height: 1.4;
   letter-spacing: 10px;
-  padding-bottom: 45px;
 }
 #slider .block p {
   font-size: 23px;
-  line-height: 40px;
+  line-height: 1.5;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
@@ -142,7 +143,7 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 #intro {
   text-align: center;
-  padding: 100px 0;
+  padding: 4em 0;
 }
 #intro .block h2 {
   padding-top: 35px;
@@ -152,6 +153,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #intro .block p {
   color: #7B7B7B;
   padding-top: 20px;
+  text-align: left;
 }
 #intro .block img {
   padding-left: 40px;
@@ -162,6 +164,9 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #intro .section-title p {
   padding-top: 20px;
+}
+#intro .section-title p:last-of-type {
+  margin-bottom: 2em;
 }
 #intro .service-item {
   padding-bottom: 30px;
@@ -187,7 +192,7 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 #service {
   text-align: center;
-  padding: 90px 0;
+  padding: 4em 0;
 }
 #service .service-item {
   padding-bottom: 30px;
@@ -213,7 +218,10 @@ font header .navbar-default .navbar-nav li a:hover {
 */
 #work {
   text-align: center;
-  padding: 90px 0;
+  padding: 4em 0;
+}
+#work .work-item {
+  margin-bottom: 4em;
 }
 /*--
 	call-to-action Start
@@ -222,7 +230,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background: url("../img/call-to-action-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 70px 0px;
+  padding: 4em 0px;
   position: relative;
   text-align: center;
   color: #fff;
@@ -241,21 +249,44 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #call-to-action h2 {
   padding-bottom: 20px;
-  line-height: 33px;
+  line-height: 1.4;
   margin: 0;
-  font-size: 30px;
+  font-size: 28px;
+  font-weight: 600;
 }
 #call-to-action p {
   font-size: 14px;
   line-height: 1.6;
 }
-#call-to-action .btn-call-to-action {
-  padding: 15px 35px;
+#call-to-action .block button {
+  padding: 1.2em 4em;
   border: none;
-  background-color: #fff;
+  background-color: #0094a6;
   font-size: 15px;
-  color: #333333;
+  color: #fff;
   margin-top: 30px;
+}
+#call-to-action .block form .form-group {
+  padding-bottom: 15px;
+  margin: 0px;
+}
+#call-to-action .block form .form-group .form-control {
+  background: #F6F8FA;
+  height: 60px;
+  border: 1px solid #EEF2F6;
+  box-shadow: none;
+  width: 100%;
+}
+#call-to-action .block form .form-group-2 {
+  padding-bottom: 15px;
+  margin: 0px;
+}
+#call-to-action .block form .form-group-2 textarea {
+  background: #F6F8FA;
+  height: 135px;
+  border: 1px solid #EEF2F6;
+  box-shadow: none;
+  width: 100%;
 }
 /*--
 	Feature Start
@@ -280,7 +311,7 @@ font header .navbar-default .navbar-nav li a:hover {
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  padding: 100px 0;
+  padding: 4em 0;
 }
 #feature h2 {
   font-size: 28px;
@@ -300,7 +331,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	content Start
 --*/
 #testimonial {
-  padding: 100px 0;
+  padding: 4em 0px;
 }
 #testimonial .block h2 {
   line-height: 27px;
