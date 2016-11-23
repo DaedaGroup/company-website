@@ -3,7 +3,7 @@
  * In airspace, it is called style.css
  * However, style.css now holds additional styles for this jekyll port. (Not written by ThemeFisher)
  * The original style.css is now called airspace.css
- * 
+ *
  */
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
@@ -15,6 +15,7 @@
 --*/
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -34,7 +35,7 @@ h3 {
   font-weight: 300;
 }
 p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 28px;
 }
 ul {
@@ -60,13 +61,18 @@ a:active {
   font-family: 'Volkhov', serif;
   font-style: italic;
   color: #666;
+  text-align: left;
 }
 /*--
 	Header Start
 --*/
 header {
+  position: fixed;
   background: #fff;
   padding: 20px 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 0 1.5em rgba(0,0,0,.1);
 }
 header .navbar {
   margin-bottom: 0px;
@@ -85,7 +91,7 @@ header .navbar-default .navbar-nav {
 header .navbar-default .navbar-nav li a {
   color: #333333;
   padding: 10px 26px;
-  font-size: 15px;
+
 }
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
@@ -97,7 +103,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider Start
 --*/
 #slider {
-  background: url("../img/slider-bg.jpg") no-repeat;
+  background: url("/img/slider-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
@@ -113,23 +119,23 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #8b86a3, #322e40);
-  opacity: 0.8;
+  background: linear-gradient(to left, #0094a6, #1d1d1d);
+  opacity: 0.4;
 }
 #slider .block {
   color: #E3E3E4;
 }
 #slider .block h1 {
+  margin-top: 1.6em;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 45px;
-  line-height: 60px;
+  line-height: 1.4;
   letter-spacing: 10px;
-  padding-bottom: 45px;
 }
 #slider .block p {
   font-size: 23px;
-  line-height: 40px;
+  line-height: 1.5;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
@@ -138,16 +144,17 @@ font header .navbar-default .navbar-nav li a:hover {
 	wrapper Start
 --*/
 #intro {
-  padding: 100px 0;
+  text-align: center;
+  padding: 6em 0;
 }
 #intro .block h2 {
-  padding-top: 35px;
-  line-height: 27px;
+  line-height: 1.6;
   margin: 0;
 }
 #intro .block p {
   color: #7B7B7B;
   padding-top: 20px;
+  text-align: left;
 }
 #intro .block img {
   padding-left: 40px;
@@ -159,19 +166,41 @@ font header .navbar-default .navbar-nav li a:hover {
 #intro .section-title p {
   padding-top: 20px;
 }
+#intro .section-title p:last-of-type {
+  margin-bottom: 2em;
+}
+#intro .service-item {
+  padding-bottom: 30px;
+}
+#intro .service-item i {
+  font-size: 60px;
+  color: #0094a6;
+}
+#intro .service-item h4 {
+  padding-top: 20px;
+  margin: 0;
+  color: #666;
+}
+#intro .service-item p {
+  color: #888;
+  padding-top: 10px;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
 /*--
 	service Start
 --*/
 #service {
   text-align: center;
-  padding: 90px 0;
+  padding: 4em 0;
 }
 #service .service-item {
   padding-bottom: 30px;
 }
 #service .service-item i {
   font-size: 60px;
-  color: #4A4656;
+  color: #0094a6;
 }
 #service .service-item h4 {
   padding-top: 20px;
@@ -182,8 +211,18 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #888;
   padding-top: 10px;
   margin: 0;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 1.8;
+}
+/*--
+    work start
+*/
+#work {
+  text-align: center;
+  padding: 6em 0;
+}
+#work .work-item {
+  margin-bottom: 4em;
 }
 /*--
 	call-to-action Start
@@ -192,7 +231,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background: url("../img/call-to-action-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 70px 0px;
+  padding: 6em 0px;
   position: relative;
   text-align: center;
   color: #fff;
@@ -206,26 +245,49 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
+  background: #003f49;
   opacity: 0.8;
 }
 #call-to-action h2 {
   padding-bottom: 20px;
-  line-height: 33px;
+  line-height: 1.4;
   margin: 0;
-  font-size: 30px;
+  font-size: 28px;
+  font-weight: 600;
 }
 #call-to-action p {
-  font-size: 14px;
+  font-size: 1em;
   line-height: 1.6;
 }
-#call-to-action .btn-call-to-action {
-  padding: 15px 35px;
+#call-to-action .block button {
+  padding: 1.2em 4em;
   border: none;
-  background-color: #fff;
-  font-size: 15px;
-  color: #333333;
+  background-color: #0094a6;
+  font-size: 16px;
+  color: #fff;
   margin-top: 30px;
+}
+#call-to-action .block form .form-group {
+  padding-bottom: 15px;
+  margin: 0px;
+}
+#call-to-action .block form .form-group .form-control {
+  background: #F6F8FA;
+  height: 60px;
+  border: 1px solid #EEF2F6;
+  box-shadow: none;
+  width: 100%;
+}
+#call-to-action .block form .form-group-2 {
+  padding-bottom: 15px;
+  margin: 0px;
+}
+#call-to-action .block form .form-group-2 textarea {
+  background: #F6F8FA;
+  height: 135px;
+  border: 1px solid #EEF2F6;
+  box-shadow: none;
+  width: 100%;
 }
 /*--
 	Feature Start
@@ -250,7 +312,7 @@ font header .navbar-default .navbar-nav li a:hover {
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  padding: 100px 0;
+  padding: 6em 0;
 }
 #feature h2 {
   font-size: 28px;
@@ -262,7 +324,7 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-bottom: 20px;
 }
 #feature .btn-view-works {
-  background: #655E7A;
+  background: #0094a6;
   color: #fff;
   padding: 10px 20px;
 }
@@ -270,7 +332,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	content Start
 --*/
 #testimonial {
-  padding: 100px 0;
+  padding: 6em 0px;
 }
 #testimonial .block h2 {
   line-height: 27px;
@@ -417,7 +479,7 @@ font header .navbar-default .navbar-nav li a:hover {
   display: inline-block;
   padding: 0px 25px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 40px;
   font-weight: 600;
   color: #333333;
@@ -494,11 +556,11 @@ font header .navbar-default .navbar-nav li a:hover {
   letter-spacing: 1px;
 }
 #portfolio-work .block .portfolio-contant ul li a p {
-  font-size: 15px;
+  font-size: 16px;
 }
 #portfolio-work .block .portfolio-contant ul li a span {
   font-style: italic;
-  font-size: 13px;
+  font-size: 1em;
   color: #655E7A;
 }
 #portfolio-work .block .portfolio-contant ul img {
@@ -780,7 +842,7 @@ footer {
   padding-bottom: 55px;
 }
 footer p {
-  font-size: 13px;
+  font-size: 1em;
   line-height: 25px;
   color: #919191;
 }
