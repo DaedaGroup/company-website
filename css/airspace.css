@@ -15,6 +15,7 @@
 --*/
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -34,7 +35,7 @@ h3 {
   font-weight: 300;
 }
 p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 28px;
 }
 ul {
@@ -71,6 +72,7 @@ header {
   padding: 20px 0;
   width: 100%;
   z-index: 9999;
+  box-shadow: 0 0 1.5em rgba(0,0,0,.1);
 }
 header .navbar {
   margin-bottom: 0px;
@@ -89,7 +91,7 @@ header .navbar-default .navbar-nav {
 header .navbar-default .navbar-nav li a {
   color: #333333;
   padding: 10px 26px;
-  font-size: 15px;
+
 }
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
@@ -143,11 +145,10 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 #intro {
   text-align: center;
-  padding: 4em 0;
+  padding: 6em 0;
 }
 #intro .block h2 {
-  padding-top: 35px;
-  line-height: 27px;
+  line-height: 1.6;
   margin: 0;
 }
 #intro .block p {
@@ -184,8 +185,8 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #888;
   padding-top: 10px;
   margin: 0;
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: 1em;
+  line-height: 1.4;
 }
 /*--
 	service Start
@@ -210,7 +211,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #888;
   padding-top: 10px;
   margin: 0;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 1.8;
 }
 /*--
@@ -218,7 +219,7 @@ font header .navbar-default .navbar-nav li a:hover {
 */
 #work {
   text-align: center;
-  padding: 4em 0;
+  padding: 6em 0;
 }
 #work .work-item {
   margin-bottom: 4em;
@@ -230,7 +231,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background: url("../img/call-to-action-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 4em 0px;
+  padding: 6em 0px;
   position: relative;
   text-align: center;
   color: #fff;
@@ -255,14 +256,14 @@ font header .navbar-default .navbar-nav li a:hover {
   font-weight: 600;
 }
 #call-to-action p {
-  font-size: 14px;
+  font-size: 1em;
   line-height: 1.6;
 }
 #call-to-action .block button {
   padding: 1.2em 4em;
   border: none;
   background-color: #0094a6;
-  font-size: 15px;
+  font-size: 16px;
   color: #fff;
   margin-top: 30px;
 }
@@ -311,7 +312,7 @@ font header .navbar-default .navbar-nav li a:hover {
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  padding: 4em 0;
+  padding: 6em 0;
 }
 #feature h2 {
   font-size: 28px;
@@ -331,7 +332,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	content Start
 --*/
 #testimonial {
-  padding: 4em 0px;
+  padding: 6em 0px;
 }
 #testimonial .block h2 {
   line-height: 27px;
@@ -478,7 +479,7 @@ font header .navbar-default .navbar-nav li a:hover {
   display: inline-block;
   padding: 0px 25px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 40px;
   font-weight: 600;
   color: #333333;
@@ -555,11 +556,11 @@ font header .navbar-default .navbar-nav li a:hover {
   letter-spacing: 1px;
 }
 #portfolio-work .block .portfolio-contant ul li a p {
-  font-size: 15px;
+  font-size: 16px;
 }
 #portfolio-work .block .portfolio-contant ul li a span {
   font-style: italic;
-  font-size: 13px;
+  font-size: 1em;
   color: #655E7A;
 }
 #portfolio-work .block .portfolio-contant ul img {
@@ -841,7 +842,7 @@ footer {
   padding-bottom: 55px;
 }
 footer p {
-  font-size: 13px;
+  font-size: 1em;
   line-height: 25px;
   color: #919191;
 }

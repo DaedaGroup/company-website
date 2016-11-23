@@ -169,7 +169,7 @@ px      68    160    252    */
     font-size: 18px;
   }
   p {
-    font-size: 13px;
+    font-size: 1em;
   }
   header .navbar-default .navbar-toggle,
   header .navbar-default .navbar-toggle:hover,
@@ -182,7 +182,7 @@ px      68    160    252    */
     margin-top: 1.2em;
   }
   #slider {
-    padding-top: 15em;
+    padding-top: 10em;
     padding-bottom: 15em;
   }
   #slider .block {
@@ -192,7 +192,7 @@ px      68    160    252    */
     font-size: 20px;
   }
   #slider .block p {
-    font-size: 13px;
+    font-size: 1em;
   }
   /*--
 	wrapper Start
