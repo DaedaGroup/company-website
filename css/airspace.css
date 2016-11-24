@@ -103,7 +103,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider Start
 --*/
 #slider {
-  background: url(/img/laptop-bg.jpg) no-repeat;
+  background: url("../img/laptop-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 15% top;
@@ -233,7 +233,6 @@ font header .navbar-default .navbar-nav li a:hover {
   background-attachment: fixed;
   padding: 6em 0px;
   position: relative;
-  text-align: center;
   color: #fff;
 }
 #call-to-action:before {
@@ -254,6 +253,7 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 0;
   font-size: 28px;
   font-weight: 600;
+  text-align: center;
 }
 #call-to-action p {
   font-size: 1em;
@@ -271,12 +271,19 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 15px;
   margin: 0px;
 }
+#call-to-action .block form .form-group .control-label {
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: left;
+}
 #call-to-action .block form .form-group .form-control {
   background: #F6F8FA;
-  height: 60px;
   border: 1px solid #EEF2F6;
   box-shadow: none;
   width: 100%;
+}
+#call-to-action .block form .form-group .form-control.msg {
+  height: auto;
 }
 #call-to-action .block form .form-group-2 {
   padding-bottom: 15px;
@@ -284,7 +291,6 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #call-to-action .block form .form-group-2 textarea {
   background: #F6F8FA;
-  height: 135px;
   border: 1px solid #EEF2F6;
   box-shadow: none;
   width: 100%;
@@ -831,6 +837,41 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #292929;
   font-weight: 300;
 }
+
+/*---------------------------*/
+/*--
+	Thank You Start
+--*/
+#thankyou {
+  background: url("../img/thank-you-bg.jpg");
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: visible;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 16em 0;
+  font-size: 16px;
+}
+#thankyou h1 {
+  font-size: 3.5em;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 .1em .1em rgba(0,0,0,.4);
+}
+
+
 /*---------------------------*/
 /*--
 	footer Start
