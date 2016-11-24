@@ -14,8 +14,8 @@ keep_files:
 
 
 # Site settings
-title: daedagroup
-subtitle: "A web development team specializing in building anything from marketing websites to custom web and mobile applications."
+title: daeda group
+subtitle: "A web development team specializing in building static marketing websites, data lead capturing, dynamic database web apps and mobile apps."
 # Base URL of site. It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
