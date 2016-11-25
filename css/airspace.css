@@ -50,9 +50,10 @@ a:active {
   text-decoration: none !important;
 }
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 3em;
 }
 .section-title h2 {
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-size: 28px;
   font-weight: 600;
@@ -248,9 +249,8 @@ font header .navbar-default .navbar-nav li a:hover {
   opacity: 0.8;
 }
 #call-to-action h2 {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   line-height: 1.4;
-  margin: 0;
   font-size: 28px;
   font-weight: 600;
   text-align: center;
@@ -259,41 +259,68 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 1em;
   line-height: 1.6;
 }
-#call-to-action .block button {
-  padding: 1.2em 4em;
+#call-to-action button {
+  padding: 1.2em 0;
   border: none;
   background-color: #0094a6;
   font-size: 16px;
   color: #fff;
   margin-top: 30px;
+  float: right;
 }
-#call-to-action .block form .form-group {
+#call-to-action .form-group {
   padding-bottom: 15px;
   margin: 0px;
 }
-#call-to-action .block form .form-group .control-label {
+#call-to-action .control-label {
   font-size: 1em;
   text-transform: uppercase;
   text-align: left;
 }
-#call-to-action .block form .form-group .form-control {
-  background: #F6F8FA;
+#call-to-action .form-control {
+  background-color: #F6F8FA;
   border: 1px solid #EEF2F6;
   box-shadow: none;
   width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
 }
-#call-to-action .block form .form-group .form-control.msg {
+#call-to-action .form-control.msg {
   height: auto;
 }
-#call-to-action .block form .form-group-2 {
+#call-to-action .form-group-2 {
   padding-bottom: 15px;
   margin: 0px;
 }
-#call-to-action .block form .form-group-2 textarea {
+#call-to-action .form-group-2 textarea {
   background: #F6F8FA;
   border: 1px solid #EEF2F6;
   box-shadow: none;
   width: 100%;
+}
+#call-to-action input.form-control.parsley-error,
+#call-to-action select.form-control.parsley-error,
+#call-to-action textarea.form-control.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+#call-to-action .parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+#call-to-action .parsley-errors-list.filled {
+  opacity: 1;
 }
 /*--
 	Feature Start
@@ -323,7 +350,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #feature h2 {
   font-size: 28px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #feature p {
   color: #8d8f92;
@@ -332,7 +359,8 @@ font header .navbar-default .navbar-nav li a:hover {
 #feature .btn-view-works {
   background: #0094a6;
   color: #fff;
-  padding: 10px 20px;
+  padding: 1.2em 0;
+  font-size: 16px;
 }
 /*--
 	content Start
