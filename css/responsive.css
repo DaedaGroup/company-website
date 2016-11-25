@@ -190,6 +190,8 @@ px      68    160    252    */
   #slider {
     padding-top: 10em;
     padding-bottom: 15em;
+    background-position: -3em bottom;
+    background-attachment: scroll;
   }
   #slider .block {
     padding-left: 0px;
@@ -228,9 +230,9 @@ px      68    160    252    */
   #call-to-action p {
     padding: 0px 0px 40px;
   }
-  #call-to-action .btn {
-    padding: 10px 20px;
-    font-size: 15px;
+  #call-to-action .block button {
+    display: block;
+    float: none;
   }
   /*--
 	content Start

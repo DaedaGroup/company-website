@@ -72,7 +72,6 @@ permalink: /
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-4 col-md-6 col-md-offset-6">
       <h2>OUR PASSION</h2>
       <p>We believe in helping others. We know that many ideas go overlooked because companies don't have the resources to develop a lot of their ideas, so we're here to help. We're passionate about helping our client bring their ideas to market quickly. We work with a lot of different technologies, so chances are, we can support most all of your technical needs from landing pages, full blown data driven web applications, to mobile applications. Whether it's on your phone or on the web, we're building it with a mobile first mindset that responds to your business needs.</p>
-      <a href="#section-work" class="btn btn-view-works">View Works</a>
     </div>
   </div>
 </div>
@@ -127,25 +126,25 @@ permalink: /
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
         <div class="block">
-          <form action="https://formspree.io/jason.spence@daeda.io" method="post">
+          <form id="contactForm" name="contactForm" action="https://formspree.io/jason.spence@daeda.io" method="post">
             <input type="hidden" name="_subject" value="Daeda Contact Form Submission" />
             <input type="hidden" name="_cc" value="jason.spence@daeda.io,jeff.berney@daeda.io,kevin.cherdch@daeda.io,ed.carpio@daeda.io" />
             <input type="hidden" name="_next" value="{{ site.baseurl }}/confirm/" />
             <input type="text" name="_gotcha" style="display:none" />
             <div class="form-group form-group-lg">
               <label class="control-label" for="FirstName">First Name</label>
-              <input type="text" class="form-control" id="FirstName" name="FirstName" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
+              <input type="text" class="form-control" id="FirstName" name="FirstName" pattern="^[a-zA-Z][a-zA-Z0-9-_\ .]{1,20}$" required>
             </div>
             <div class="form-group form-group-lg">
               <label class="control-label" for="LastName">Last Name</label>
-              <input type="text" class="form-control" id="LastName" name="LastName" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
+              <input type="text" class="form-control" id="LastName" name="LastName" pattern="^[a-zA-Z][a-zA-Z0-9-_\ .]{1,20}$" required>
             </div>
             <div class="form-group form-group-lg">
               <label class="control-label" for="EmailAddress">Email</label>
               <input type="email" class="form-control" id="EmailAddress" name="EmailAddress" required>
             </div>
             <div class="form-group form-group-lg">
-              <label class="control-label" for="Inquirey">Inquiry</label>
+              <label class="control-label" for="Inquirey">Inquiry type</label>
               <select class="form-control" id="Inquiry" name="Inquiry" required>
                 <option value="">Select one</option>
                 <option value="Creative Design">Creative Design</option>
@@ -157,9 +156,13 @@ permalink: /
             </div>
             <div class="form-group form-group-lg">
               <label class="control-label" for="Message">Message</label>
-              <textarea class="form-control msg" id="Message" name="Message" rows="3" pattern="[a-zA-Z 0-9]+" required></textarea>
+              <textarea class="form-control msg" id="Message" name="Message" rows="3" required></textarea>
             </div>
-            <button class="btn btn-info btn-lg" type="submit">Send Message</button>
+            <div class="row">
+              <div class="col-sm-6">
+                <button class="btn btn-info btn-lg btn-block" type="submit">Send Message</button>
+              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -175,7 +178,6 @@ permalink: /
       <div class="col-xs-10 col-xs-offset-1">
         <div class="section-title text-center">
           <h2>OUR CLIENTS</h2>
-          <p>At our core, we’re a group of problem solvers. We’re dedicated to our clients success  that span different industries. We listen to our clients so we can fit you with the perfect solution that drives&nbsp;results.</p>
         </div>
       </div>
     </div>
