@@ -4,6 +4,16 @@ $(function(){
 	// Initialize form validation
 	$('#contactForm').parsley();
 
+	// jQuery for page scrolling feature - requires jQuery Easing plugin
+  $('a.page-scroll').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top
+      }, 1500, 'easeInOutExpo');
+      event.preventDefault();
+  });
+
+	/*
 	$("#portfolio-contant-active").mixItUp();
 
 	$("#testimonial-slider").owlCarousel({
@@ -40,5 +50,6 @@ $(function(){
       delay: 10,
       time: 1000
   });
+	*/
 
 });

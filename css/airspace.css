@@ -144,45 +144,45 @@ font header .navbar-default .navbar-nav li a:hover {
 /*--
 	wrapper Start
 --*/
-#intro {
+#about {
   text-align: center;
   padding: 6em 0;
 }
-#intro .block h2 {
+#about .block h2 {
   line-height: 1.6;
   margin: 0;
 }
-#intro .block p {
+#about .block p {
   color: #7B7B7B;
   padding-top: 20px;
   text-align: left;
 }
-#intro .block img {
+#about .block img {
   padding-left: 40px;
   width: 100%;
 }
-#intro .section-title {
+#about .section-title {
   margin-bottom: 0px;
 }
-#intro .section-title p {
+#about .section-title p {
   padding-top: 20px;
 }
-#intro .section-title p:last-of-type {
+#about .section-title p:last-of-type {
   margin-bottom: 2em;
 }
-#intro .service-item {
+#about .service-item {
   padding-bottom: 30px;
 }
-#intro .service-item i {
+#about .service-item i {
   font-size: 60px;
   color: #0094a6;
 }
-#intro .service-item h4 {
+#about .service-item h4 {
   padding-top: 20px;
   margin: 0;
   color: #666;
 }
-#intro .service-item p {
+#about .service-item p {
   color: #888;
   padding-top: 10px;
   margin: 0;
