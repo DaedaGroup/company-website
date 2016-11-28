@@ -1,0 +1,60 @@
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+footer {
+  background: #F5F5F5;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 55px;
+
+  .footer-manu {
+    display: none;
+  }
+  p {
+    font-size: 1em;
+    line-height: 25px;
+    color: #919191;
+  }
+  a:link,
+  a:visited {
+    color: #595959;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+  footer {
+    .footer-manu {
+      padding-bottom: 25px;
+      display: block;
+
+      ul {
+        margin: 0px;
+        padding: 0px;
+
+        li {
+          display: inline-block;
+          padding: 0px 1em;
+
+          a {
+            display: inline-block;
+            color: #494949;
+
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {}

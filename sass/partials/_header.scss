@@ -1,0 +1,68 @@
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+header {
+  position: fixed;
+  background: #fff;
+  padding: 20px 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 0 1.5em rgba(0,0,0,.1);
+
+  .navbar {
+    margin-bottom: 0;
+    border: 0;
+  }
+  .navbar-brand {
+    padding-top: 5px;
+  }
+  .navbar-default {
+    background: none;
+    border: 0;
+
+    .navbar-toggle,
+    .navbar-toggle:hover,
+    .navbar-toggle:focus {
+      background-color: #fff;
+      border-color: #fff;
+    }
+    .navbar-collapse,
+    .navbar-form {
+      margin-top: 1.2em;
+    }
+
+    .navbar-nav {
+      padding-top: 10px;
+
+      li a {
+        color: #333333;
+        padding: 10px 26px;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+  header {
+    .navbar-default {
+      .navbar-collapse,
+      .navbar-form {
+        margin-top: 0;
+      }
+    }
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {}

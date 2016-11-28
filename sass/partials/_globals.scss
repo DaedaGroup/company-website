@@ -1,0 +1,92 @@
+
+// Breakpoints
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+// fonts
+$basefontsize: 16px;
+
+// Common
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $basefontsize;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
+  font-size: 1.750em;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.750em;
+  font-weight: 300;
+}
+p {
+  font-size: 1em;
+  line-height: 1.750;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a,
+a:active,
+a:focus,
+a:active {
+  text-decoration: none !important;
+}
+.section-title {
+  margin-bottom: 3em;
+  font-size: $basefontsize;
+
+  h2 {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 1.750em;
+    font-weight: 600;
+  }
+  p {
+    margin-bottom: 1.250em;
+    padding-top: 0;
+    font-family: 'Volkhov', serif;
+    font-style: italic;
+    color: #666;
+    text-align: left;
+  }
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+  h2 {
+    font-size: 1.875em;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 1.750em;
+    font-weight: 300;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.750;
+  }
+
+}
