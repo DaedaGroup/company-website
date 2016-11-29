@@ -67,15 +67,16 @@
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) {
+@media (min-width: $screen-md-min) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
 
   #slider {
+    background-size: cover;
     background-attachment: fixed;
     background-position: 15% top;
     padding: 200px 0 280px 0;
   }
 
 }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {}
