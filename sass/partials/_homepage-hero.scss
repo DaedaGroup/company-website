@@ -3,12 +3,12 @@
 /* No media query since this is the default in Bootstrap */
 
 #slider {
+  position: relative;
+  padding: 10em 0 15em 0;
   background: url("../img/laptop-bg.jpg") no-repeat;
   background-size: cover;
-  padding: 10em 0 15em 0;
   background-position: -3em bottom;
   background-attachment: scroll;
-  position: relative;
   font-size: $basefontsize;
 
   &:before {
@@ -49,6 +49,11 @@
 @media (min-width: $screen-sm-min) {
 
   #slider {
+    background: url("../img/laptop-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: -3em bottom;
+    background-attachment: scroll;
+
     .block {
       h1 {
         margin-top: 1.6em;

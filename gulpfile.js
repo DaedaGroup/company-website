@@ -10,12 +10,11 @@ var reload = browserSync.reload;
 
 // Compile sass files
 gulp.task('sass', function() {
-  return sass('sass/*.scss')
+  return gulp.src('./sass/*.scss')
     .pipe(sass())
     .pipe(cssmin())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('css'))
-    .pipe(reload({ stream:true }));
+    .pipe(gulp.dest('./css'));
 });
 
 // Task for building blog when something changed:
@@ -29,7 +28,7 @@ gulp.task('serve', function () {
       });
 
     // Reloads page when some of the already built files changed:
-    gulp.watch('sass/*.scss', ['sass']);
+    gulp.watch('./sass/*.scss', ['sass']);
     gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
