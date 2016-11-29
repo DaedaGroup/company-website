@@ -235,7 +235,7 @@ header {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #passion {
-    background-position: left center;
+    background-position: -15em center;
     background-attachment: scroll; } }
 
 /* Medium devices (desktops, 992px and up) */
