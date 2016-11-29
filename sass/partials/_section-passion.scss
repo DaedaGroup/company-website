@@ -8,7 +8,7 @@
   display: block;
   position: relative;
   overflow: visible;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #fff;
@@ -36,10 +36,24 @@
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) {}
+@media (min-width: $screen-sm-min) {
+
+  #passion {
+    background-position: left center;
+    background-attachment: scroll;
+  }
+
+}
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) {}
+@media (min-width: $screen-md-min) {
+
+  #passion {
+    background-position: center center;
+    background-attachment: scroll;
+  }
+
+}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {

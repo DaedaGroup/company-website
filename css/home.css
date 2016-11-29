@@ -210,7 +210,7 @@ header {
   display: block;
   position: relative;
   overflow: visible;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #fff;
@@ -233,7 +233,17 @@ header {
     font-size: 16px; }
 
 /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #passion {
+    background-position: left center;
+    background-attachment: scroll; } }
+
 /* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #passion {
+    background-position: center center;
+    background-attachment: scroll; } }
+
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #passion {
