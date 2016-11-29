@@ -3,9 +3,9 @@
 /* No media query since this is the default in Bootstrap */
 
 #call-to-action {
-  background: url("../img/call-to-action-bg.jpg") no-repeat;
+  background: url("/img/call-to-action-bg.jpg") no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   padding: 6em 0px;
   position: relative;
   color: #fff;
@@ -104,4 +104,10 @@
 @media (min-width: $screen-md-min) {}
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {}
+@media (min-width: $screen-lg-min) {
+
+  #call-to-action {
+    background-attachment: fixed;
+  }
+
+}
