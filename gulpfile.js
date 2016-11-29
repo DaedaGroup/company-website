@@ -12,6 +12,7 @@ var reload = browserSync.reload;
 gulp.task('sass', function() {
   return gulp.src('./sass/*.scss')
     .pipe(sass())
+    .pipe(gulp.dest('./css'))
     .pipe(cssmin())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./css'));
