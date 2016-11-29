@@ -3,12 +3,12 @@
 /* No media query since this is the default in Bootstrap */
 
 #passion {
-  background: url("../img/featue-bg.jpg");
+  background: url("/img/featue-bg.jpg");
   width: 100%;
   display: block;
   position: relative;
   overflow: visible;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #fff;
@@ -42,4 +42,10 @@
 @media (min-width: $screen-md-min) {}
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {}
+@media (min-width: $screen-lg-min) {
+
+  #passion {
+    background-attachment: fixed;
+  }
+
+}
