@@ -1,27 +1,36 @@
 
 var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass');
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
+var shell = require('gulp-shell');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
 // Compile sass files
 gulp.task('sass', function() {
   return sass('sass/*.scss')
+    .pipe(sass())
+    .pipe(cssmin())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('css'))
     .pipe(reload({ stream:true }));
 });
 
-// watch Sass files for changes, run the Sass preprocessor with the 'sass' task and reload
-gulp.task('serve', ['sass'], function() {
-  browserSync({
-    server: {
-      baseDir: './'
-    }
-  });
+// Task for building blog when something changed:
+gulp.task('build', shell.task(['jekyll build --watch']));
 
-  gulp.watch('sass/*.scss', ['sass']);
+// Task for serving blog with Browsersync
+gulp.task('serve', function () {
+    browserSync.init({
+      server: {
+        baseDir: '_site/'}
+      });
+
+    // Reloads page when some of the already built files changed:
+    gulp.watch('sass/*.scss', ['sass']);
+    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
-gulp.task('default', function() {
-  // place code for your default task here
-});
+gulp.task('default', ['build', 'serve']);

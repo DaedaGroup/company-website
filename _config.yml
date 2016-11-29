@@ -6,6 +6,8 @@ exclude:
   - "README.md"
   - "LICENSE.md"
   - "*.gemspec"
+  - "node_modules"
+  - "gulpfile.js"
 
 keep_files:
   - "CNAME"
