@@ -139,49 +139,72 @@ permalink: /
 <section id="call-to-action">
   <div class="container">
     <div class="row">
-      <div class="col-xs-10 col-xs-offset-1">
-        <h2>CONTACT US</h2>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
         <div class="block">
-          <form id="contactForm" name="contactForm" action="https://formspree.io/info@daeda.io" method="post">
-            <input type="hidden" name="_subject" value="Daeda Contact Form Submission" />
-            <input type="hidden" name="_next" value="{{ site.baseurl }}/confirm/" />
-            <input type="text" name="_gotcha" style="display:none" />
-            <div class="form-group form-group-lg">
-              <label class="control-label" for="FirstName">First Name</label>
-              <input type="text" class="form-control" id="FirstName" name="FirstName" pattern="^[a-zA-Z][a-zA-Z0-9-_\ .]{1,20}$" required>
-            </div>
-            <div class="form-group form-group-lg">
-              <label class="control-label" for="LastName">Last Name</label>
-              <input type="text" class="form-control" id="LastName" name="LastName" pattern="^[a-zA-Z][a-zA-Z0-9-_\ .]{1,20}$" required>
-            </div>
-            <div class="form-group form-group-lg">
-              <label class="control-label" for="EmailAddress">Email</label>
-              <input type="email" class="form-control" id="EmailAddress" name="EmailAddress" required>
-            </div>
-            <div class="form-group form-group-lg">
-              <label class="control-label" for="Inquirey">Inquiry type</label>
-              <select class="form-control" id="Inquiry" name="Inquiry" required>
-                <option value="">Select one</option>
-                <option value="Creative Design">Creative Design</option>
-                <option value="Landing Page">Landing Page</option>
-                <option value="Web Development">Web Development</option>
-                <option value="Database">Database</option>
-                <option value="Maintenance">Maintenance</option>
-              </select>
-            </div>
-            <div class="form-group form-group-lg">
-              <label class="control-label" for="Message">Message</label>
-              <textarea class="form-control msg" id="Message" name="Message" rows="3" required></textarea>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <button class="btn btn-info btn-lg btn-block" type="submit">Send Message</button>
+          <form id="contactForm" name="contactForm" method="post">
+            <fieldset class="section-form">
+              <input type="hidden" name="_subject" value="Daeda Contact Form Submission" />
+              <input type="text" name="_gotcha" style="display:none" />
+              <div class="row">
+                <div class="col-sm-12">
+                  <h2>CONTACT US</h2>
+                </div>
               </div>
-            </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group form-group-lg">
+                    <label class="control-label" for="FirstName">First Name</label>
+                    <input type="text" class="form-control" id="FirstName" name="FirstName" pattern="^[a-zA-Z][a-zA-Z0-9-_\ .]{1,20}$" required>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group form-group-lg">
+                    <label class="control-label" for="LastName">Last Name</label>
+                    <input type="text" class="form-control" id="LastName" name="LastName" pattern="^[a-zA-Z][a-zA-Z0-9-_\ .]{1,20}$" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group form-group-lg">
+                    <label class="control-label" for="EmailAddress">Email</label>
+                    <input type="email" class="form-control" id="EmailAddress" name="EmailAddress" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group form-group-lg">
+                    <label class="control-label" for="Inquirey">Inquiry type</label>
+                    <select class="form-control" id="Inquiry" name="Inquiry" required>
+                      <option value="">Select one</option>
+                      <option value="Creative Design">Creative Design</option>
+                      <option value="Landing Page">Landing Page</option>
+                      <option value="Web Development">Web Development</option>
+                      <option value="Database">Database</option>
+                      <option value="Maintenance">Maintenance</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group form-group-lg">
+                    <label class="control-label" for="Message">Message</label>
+                    <textarea class="form-control msg" id="Message" name="Message" rows="3" required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-sm-offset-6">
+                  <button class="btn btn-info btn-lg btn-block" type="submit">Send Message</button>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="section-confirm" style="display: none">
+              <h2>THANK YOU!</h2>
+              <h3 class="text-center">We're looking forward to showing you how we can help.</h3>
+            </fieldset>
           </form>
         </div>
       </div>

@@ -1,9 +1,16 @@
 
-$(function(){
+$(function() {
 
 	// Cache selectors
 	var contactForm = $('#contactForm'),
-			anchorScrollEle = $('a.page-scroll');
+			sectionForm = $('.section-form'),
+			sectionFormConfirm = $('.section-confirm'),
+			anchorScrollEle = $('a.page-scroll'),
+			firstName = $('#FirstName'),
+			lastName = $('#LastName'),
+			emailAddr = $('#EmailAddress'),
+			inquiry = $('#Inquiry'),
+			message = $('#Message');
 
 	// Initialize form validation
 	$(contactForm).parsley();
@@ -16,5 +23,33 @@ $(function(){
       }, 1500, 'easeInOutExpo');
       event.preventDefault();
   });
+
+	$(contactForm).submit(function (e) {
+		e.preventDefault();
+
+		var formData = {
+				'First Name': 	$(firstName).val(),
+				'Last Name': 	$(lastName).val(),
+				'Email Address': 	$(emailAddr).val(),
+				'Inquiry': $(inquiry).val(),
+				'Message': $(message).val()
+		};
+
+		$.ajax({
+		    url: 'https://formspree.io/info@daeda.io',
+		    method: 'POST',
+		    data: formData,
+		    dataType: 'json'
+		})
+		.done(function(data) {
+
+			$(sectionForm).hide('400', function(){
+				$(sectionFormConfirm).show();
+			});
+			$(contactForm)[0].reset();
+
+		});
+
+	});
 
 });
