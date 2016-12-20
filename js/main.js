@@ -45,6 +45,9 @@ $(function() {
 
 			$(sectionForm).hide('400', function(){
 				$(sectionFormConfirm).show();
+				$('html, body').stop.animate({
+					scrollTop: $(contactForm).offset().top
+				});
 			});
 			$(contactForm)[0].reset();
 
