@@ -318,9 +318,11 @@ header {
     min-width: 100%;
     float: left; }
     #call-to-action .ddl-menu label {
+      margin: 0;
       font-weight: 400;
       display: block; }
     #call-to-action .ddl-menu select {
+      margin-bottom: 15px;
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;

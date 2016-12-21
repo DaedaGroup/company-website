@@ -67,10 +67,12 @@
     float: left;
 
     label {
+      margin: 0;
       font-weight: 400;
       display: block;
     }
     select {
+      margin-bottom: 15px;
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
