@@ -61,6 +61,34 @@
     -moz-appearance: none;
     appearance: none;
   }
+  .ddl-menu {
+    position: relative;
+    min-width: 100%;
+    float: left;
+
+    label {
+      font-weight: 400;
+      display: block;
+    }
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      display: block;
+      width: 100%;
+    }
+
+    &:after {
+      position: absolute;
+      top: .3rem;
+      right: 1.5rem;
+      font-family: FontAwesome;
+      font-size: 3rem;
+      content: "\f107";
+      color: #333;
+      pointer-events: none;
+    }
+  }
   .form-control.msg {
     height: auto;
   }
