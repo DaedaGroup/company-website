@@ -22,7 +22,7 @@ subtitle: "A web development team specializing in building static marketing webs
 # root of your server.
 # baseurl: "/" # the subpath of your site
 url: "https://daedagroup.github.io" # the base hostname & protocol for your site
-baseurl: "https://daedagroup.github.io/website"
+baseurl: "https://daedagroup.github.io/daeda-website"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
