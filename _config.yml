@@ -21,8 +21,8 @@ subtitle: "A web development team specializing in building static marketing webs
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 # baseurl: "/" # the subpath of your site
-url: "https://daeda.io" # the base hostname & protocol for your site
-baseurl: "https://daeda.io/"
+url: "http://daeda.io" # the base hostname & protocol for your site
+baseurl: "http://daeda.io/"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
